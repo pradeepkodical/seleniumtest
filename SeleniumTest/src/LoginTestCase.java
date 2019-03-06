@@ -7,7 +7,7 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-public class LoginTest{
+public class LoginTestCase{
 
 	static ExtentTest test;
 	static ExtentReports report;
@@ -78,8 +78,8 @@ public class LoginTest{
 			test.log(LogStatus.PASS, "Launching Fleetview...done");
 			
 			test.log(LogStatus.INFO, "Login to Fleetview");
-			page.getElementTillVisible("#aspnetForm input[placeholder='User ID']").setValue("corp\\svcwebmetrics");
-			page.getElementTillVisible("#aspnetForm input[type='password']").setValue("!webStat15");
+			page.getElementTillVisible("#aspnetForm input[placeholder='User ID']").setValue("*****");
+			page.getElementTillVisible("#aspnetForm input[type='password']").setValue("*****");
 			page.getElementTillVisible("#aspnetForm input[type='submit']").click();
 			test.log(LogStatus.PASS, "Login to Fleetview...done");
 			
